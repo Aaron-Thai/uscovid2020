@@ -4,13 +4,13 @@ mapboxgl.accessToken =
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 4, // starting zoom
-            center: [-95.9270884, 37.1436456], // starting center
+            center: [-96, 38], // starting center
             projection: 'albers'
         });
 
-        const grades = [100, 1000, 10000], 
-        colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'], 
-        radii = [5, 15, 20];
+        const grades = [100, 1000, 10000, 100000], 
+        colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)', 'rgb(208,108,89)'], 
+        radii = [5, 15, 20, 25];
 
         map.on('load', () => {
             map.addSource('cases', {
@@ -39,7 +39,11 @@ mapboxgl.accessToken =
                                 [{
                                     zoom: 4,
                                     value: grades[2]
-                                }, radii[2]]
+                                }, radii[2]],
+                                [{
+                                    zoom: 4,
+                                    value: grades[3]
+                                }, radii[3]]
                             ]
                         },
                         'circle-color': {
@@ -47,7 +51,8 @@ mapboxgl.accessToken =
                             'stops': [
                                 [grades[0], colors[0]],
                                 [grades[1], colors[1]],
-                                [grades[2], colors[2]]
+                                [grades[2], colors[2]],
+                                [grades[3], colors[3]]
                             ]
                         },
                         'circle-stroke-color': 'white',
