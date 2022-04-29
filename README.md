@@ -5,7 +5,7 @@ This file will have a brief introduction, links to the map, screenshots, the pri
 ### Introduction
 The Covid-19 virus began to majorly spread in 2020. The US was also greatly affected. This project maps Covid case counts and rates in the mainland US.
 
-### Links to the maps
+### Links to the interactive maps
 
 [Covid rates in the Mainland US by county, 2020](https://aaron-thai.github.io/uscovid2020/map1.html)
 ![This is map1](img/Screenshot_map1.jpg) 
@@ -27,6 +27,10 @@ US county shapefiles are from the [U.S. Census Bureau](https://www.census.gov/ge
 [Mapbox Javascript API](https://docs.mapbox.com/mapbox-gl-js/api/) was used to make the maps.
 
 Guides used to create the [choropleth](https://github.com/jakobzhao/geog495/tree/main/labs/lab04) and [proportional](https://github.com/jakobzhao/geog458/tree/master/labs/lab03) maps.
+
+[QGIS 3.16.15](https://qgis.org/en/site/) was used to convert shapefile to GEOJSON.
+
+[Mapshaper](https://mapshaper.org/) was used to reduce GEOJSON file size.
 
 [Visual Studio Code](https://code.visualstudio.com/) was used to edit the code.
 
