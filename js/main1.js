@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5ic
         const map = new mapboxgl.Map({
                 container: 'map', // container ID
                 style: 'mapbox://styles/mapbox/light-v10', // style URL
-                zoom: 3.5, // starting zoom
+                zoom: 4, // starting zoom
                 center: [-100, 40], // starting center  
                 projection: 'albers',
             }
