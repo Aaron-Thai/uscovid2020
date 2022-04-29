@@ -4,7 +4,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5ic
                 container: 'map', // container ID
                 style: 'mapbox://styles/mapbox/light-v10', // style URL
                 zoom: 4, // starting zoom
-                center: [-100, 40], // starting center  
+                center: [-97, 38.5], // starting center  
                 projection: 'albers',
             }
         );
